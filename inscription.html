@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page d'inscription</title>
+    <a href ="acceuil.html">Home</a>
+    <a href ="Projet_tache.html">Projet et Tachés</a>
+    <a href ="liste_employes.html">Liste Employés</a>
+    <a href ="Inscription.html">Inscription</a>
+    <hr>
+    <img src="img1.png" alt="Centered Image" height="400%" width="100%">
+</head>
+<body>
+    <h1>
+        inscription au site 
+    </h1>
+    <form>
+      
+        <p>
+            <label for="nom">Nom:</label>
+            <input type="text" id="nom" required pattern="[A-Za-z]{2,}" title="Veuillez entrer un nom valide (lettres uniquement)">
+        </p>
+        <p>
+            <label for="prenom">Prénom:</label>
+            <input type="text" id="prenom" required pattern="[A-Za-zÀ-ÿ\s]{2,}" title="Veuillez entrer un prénom valide (lettres uniquement)">
+        </p>
+        <p>
+            <label for="email">Email:</label>
+            <input type="text" id="email">
+        </p>
+        <p>
+            <label for="telephone">Téléphone:</label>
+            <input type="tel" id="telephone">
+        </p>
+        <p>
+            <label for="dob">Date de naissance:</label>
+            <input type="date" id="dob"  required min="1970-09-01" max="2005-03-07">
+        </p>
+        <p>
+            <label for="password">Mot de passe:</label>
+            <input type="password" id="password">
+        </p>
+        <p>
+            <input type="submit" value="S'inscrire">
+        </p>
+
+
+
+
+
+    </form>
+
+</body>
+<hr>    
+<footer>
+    <p>
+        vous pouver nous contacter par email:
+        <a href="contact@esprit.tn">contact@esprit.tn</a> 
+    </p>
+    <p>
+        Adresse :Ghazela,Tunis
+    </p>
+</footer>
+</html>
