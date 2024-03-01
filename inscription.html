@@ -9,7 +9,7 @@
     <a href ="liste_employes.html">Liste Employés</a>
     <a href ="Inscription.html">Inscription</a>
     <hr>
-    <img src="img1.png" alt="Centered Image" height="400%" width="100%">
+    <img src="img1.png" alt="Centered Image" height="300%" width="100%">
 </head>
 <body>
     <h1>
@@ -17,33 +17,81 @@
     </h1>
     <form>
       
-        <p>
-            <label for="nom">Nom:</label>
-            <input type="text" id="nom" required pattern="[A-Za-z]{2,}" title="Veuillez entrer un nom valide (lettres uniquement)">
-        </p>
-        <p>
-            <label for="prenom">Prénom:</label>
-            <input type="text" id="prenom" required pattern="[A-Za-zÀ-ÿ\s]{2,}" title="Veuillez entrer un prénom valide (lettres uniquement)">
-        </p>
-        <p>
-            <label for="email">Email:</label>
-            <input type="text" id="email">
-        </p>
-        <p>
-            <label for="telephone">Téléphone:</label>
-            <input type="tel" id="telephone">
-        </p>
-        <p>
-            <label for="dob">Date de naissance:</label>
-            <input type="date" id="dob"  required min="1970-09-01" max="2005-03-07">
-        </p>
-        <p>
-            <label for="password">Mot de passe:</label>
-            <input type="password" id="password">
-        </p>
-        <p>
-            <input type="submit" value="S'inscrire">
-        </p>
+        <table>
+            <tr>
+              <td><label for="nom">Nom :</label></td>
+              <td>
+                <input
+                  type="text"
+                  id="nom"
+                  name="nom"
+                      
+                />
+              </td>
+              <td>
+                <p id="msgNom"></p>
+              </td>
+            </tr>
+            <tr>
+              <td><label for="prenom">Prénom :</label></td>
+              <td>
+                <input
+                  type="text"
+                  id="prenom"
+                  name="prenom"
+                />
+              </td>
+              <td>
+                <p id="msgPrenom"></p>
+              </td>
+            </tr>
+            <tr>
+              <td><label for="email">Email :</label></td>
+              <td><input type="email" id="email" name="email"  /></td>
+              <td>
+                <p id="msgEmail"></p>
+              </td>
+            </tr>
+            <tr>
+              <td><label for="telephone">Téléphone :</label></td>
+              <td>
+                <input
+                  type="text"
+                  id="telephone"
+                  name="telephone"
+                />
+              </td>
+              <td>
+                <p id="msgTel"></p>
+              </td>
+            </tr>
+            <tr>
+              <td><label for="date_match">Date de naissance :</label></td>
+              <td>
+                <input
+                  type="date"
+                  id="date_naissance"
+                  name="date_naissance"
+                      
+                />
+              </td>
+            </tr>
+            <tr>
+              <td><label for="lieu_match">Mot de passe:</label></td>
+              <td>
+                <input
+                type="password"
+                id="password"
+                name="password"
+              />
+              </td>
+              <td>
+                <p id="msgPassword"></p>
+              </td>
+            </tr>
+          </table>
+          <!-- <input type="submit" value="S'inscrire" /> -->
+          <button onclick="validerDateOfBirth()">Click</button>
 
 
 
