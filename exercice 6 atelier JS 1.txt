@@ -1,0 +1,41 @@
+//exercice 6 atelier JS 1
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Modification de paragraphe et centrage de h1</title>
+    <script>
+        function modif_paragraphe() {
+            // Sélectionne le paragraphe par son identifiant
+            let paragraphe = document.getElementById('monParagraphe');
+
+            // Vérifie si le paragraphe a été trouvé
+            if (paragraphe) {
+                // Remplace "original" par "corrigé" en italique
+                paragraphe.innerHTML = paragraphe.innerHTML.replace('original', '<i>corrigé</i>');
+            }
+        }
+
+        function centrage_h1() {
+            // Sélectionne le premier élément h1
+            let h1 = document.querySelector('h1');
+
+            // Vérifie si un élément h1 a été trouvé
+            if (h1) {
+                // Centre l'élément h1
+                h1.setAttribute('align', 'center');
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1 onclick="centrage_h1()">Cliquez ici pour centrer h1</h1>
+    <p id="monParagraphe" onclick="modif_paragraphe()">Ce paragraphe contient le mot "original". Cliquez ici pour le modifier.</p>
+</body>
+</html>
+
+Dans ce code, nous avons deux fonctions : modif_paragraphe et centrage_h1. La première fonction sélectionne le paragraphe par son identifiant ('monParagraphe') et remplace le mot "original" par "corrigé" en utilisant innerHTML. La seconde fonction sélectionne le premier élément <h1> avec querySelector et modifie son attribut align pour le centrer. Chacune de ces fonctions est appelée en cliquant sur l'élément correspondant.
+
+
+
+
+
